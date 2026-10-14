@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import ServiceTimes from '../components/ServiceTimes.astro';
+import CalendarSection from '../components/CalendarSection.astro';
+import WelcomeAbout from '../components/WelcomeAbout.astro';
+import Sacraments from '../components/Sacraments.astro';
+import SocialAction from '../components/SocialAction.astro';
+import DonationSection from '../components/DonationSection.astro';
+import LocationContact from '../components/LocationContact.astro';
+import Footer from '../components/Footer.astro';
+import { siteConfig } from '../data/siteConfig';
+---
+
+<Layout 
+  title={`${siteConfig.name} | Comunidad Pastoral y Diócesis`}
+  description={siteConfig.description}
+>
+  <!-- Global Navbar -->
+  <Navbar />
+
+  <main class="w-full bg-surface overflow-x-hidden">
+    <!-- 1. Hero Section -->
+    <Hero />
+
+    <!-- 2. ServiceTimes (Horarios de Culto y Confesiones) -->
+    <ServiceTimes />
+
+    <!-- 3. Welcome / About Us (Primera Visita & Visión) -->
+    <WelcomeAbout />
+
+    <!-- 4. Dynamic Liturgical Calendar (React Island) -->
+    <CalendarSection />
+
+    <!-- 5. Sacraments & Pastoral Services -->
+    <Sacraments />
+
+    <!-- 6. Social Action & Cáritas (Obras Comunitarias) -->
+    <SocialAction />
+
+    <!-- 7. Donation / Ofrenda (React Island) -->
+    <DonationSection />
+
+    <!-- 8. Location, WhatsApp & Prayer Requests (React Island) -->
+    <LocationContact />
+  </main>
+
+  <!-- Global Footer -->
+  <Footer />
+</Layout>

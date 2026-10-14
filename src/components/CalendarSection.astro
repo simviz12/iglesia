@@ -1,0 +1,27 @@
+---
+import { liturgicalEventsData } from '../data/siteConfig';
+import { LiturgicalCalendar } from './LiturgicalCalendar';
+---
+
+<section id="cronograma" class="w-full bg-surface-container-low py-20 border-y border-surface-container">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+    <!-- Section Title & Description -->
+    <div class="flex flex-col gap-2 max-w-2xl">
+      <div class="flex items-center gap-2 text-primary text-xs uppercase font-bold tracking-widest">
+        <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span>Agenda Litúrgica Parroquial</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl text-charcoal font-bold">
+        Cronograma de Fiestas y Eventos 2025
+      </h2>
+      <p class="text-charcoal-muted text-base leading-relaxed">
+        Descubre los hitos espirituales de nuestra comunidad. Haz clic en cualquier celebración para consultar los detalles completos de la liturgia, horarios y preparativos.
+      </p>
+    </div>
+
+    <!-- Dynamic Interactive React Island -->
+    <LiturgicalCalendar client:load events={liturgicalEventsData} />
+  </div>
+</section>

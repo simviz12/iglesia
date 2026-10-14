@@ -1,0 +1,132 @@
+---
+import { siteConfig } from '../data/siteConfig';
+---
+
+<section id="inicio" class="relative w-full min-h-[92vh] flex flex-col justify-between overflow-hidden pt-24 pb-12">
+  <!-- Background Image with Gradient Overlay -->
+  <div 
+    class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" 
+    style="background-image: url('/images/hero-bg.png')"
+  >
+  </div>
+  
+  <!-- Subtle Liturgical Warm Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-surface/40"></div>
+  <div class="absolute inset-0 bg-radial-at-c from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 my-auto pt-10">
+    <div class="max-w-3xl flex flex-col gap-5">
+      <!-- Badge / Subtitle -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 backdrop-blur-md shadow-sm w-fit border border-gold/30">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        <span class="text-xs uppercase tracking-widest text-primary font-bold">
+          {siteConfig.diocese}
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <div class="flex flex-col gap-2">
+        <span class="font-serif italic text-primary text-xl sm:text-2xl">
+          Bienvenidos a la Casa de Dios y de Todos
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-charcoal font-bold tracking-tight leading-[1.15]">
+          {siteConfig.name}
+        </h1>
+      </div>
+
+      <!-- Description -->
+      <p class="text-lg sm:text-xl text-charcoal-muted leading-relaxed font-normal max-w-2xl">
+        {siteConfig.description}
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center gap-3 pt-3">
+        <a 
+          href="#horarios" 
+          class="px-6 py-3.5 rounded-md bg-primary text-white hover:bg-primary-hover font-semibold text-sm transition-all shadow-primary flex items-center gap-2 group"
+        >
+          <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Ver Horarios de Semana</span>
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+
+        <a 
+          href="#cronograma" 
+          class="px-6 py-3.5 rounded-md bg-white/90 text-charcoal hover:bg-white font-semibold text-sm transition-all shadow-sm border border-surface-container flex items-center gap-2 hover:border-gold"
+        >
+          <svg class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span>Fiestas y Agenda 2025</span>
+        </a>
+
+        <a 
+          href="#intenciones" 
+          class="px-5 py-3.5 rounded-md bg-transparent hover:bg-surface-container text-primary font-semibold text-sm transition-all flex items-center gap-2"
+        >
+          <svg class="w-4 h-4 fill-current text-primary" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span>Pedir Oración</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Status Bar: "Hoy en la Parroquia" -->
+  <div class="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <div class="bg-white/95 backdrop-blur-xl rounded-xl shadow-sacred border border-surface-container p-5 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <!-- Próxima Misa -->
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0 text-primary border border-surface-container">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xs uppercase tracking-wider text-charcoal-light font-semibold">Próxima Celebración</span>
+          <span class="text-base text-charcoal font-bold">Santa Misa Vespertina • 19:30 h</span>
+          <span class="text-xs text-charcoal-muted">Templo Mayor (Transmisión en directo)</span>
+        </div>
+      </div>
+
+      <!-- Sacramento del Perdón -->
+      <div class="flex items-center gap-4 md:border-l md:border-surface-container md:pl-6">
+        <div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0 text-secondary border border-surface-container">
+          <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xs uppercase tracking-wider text-charcoal-light font-semibold">Sacramento del Perdón</span>
+          <span class="text-base text-charcoal font-bold">Confesiones Hoy: 18:30 a 19:25 h</span>
+          <span class="text-xs text-charcoal-muted">Pbro. Tomás de Aquino y Pbro. Javier</span>
+        </div>
+      </div>
+
+      <!-- Evangelio del Día -->
+      <div class="flex items-center gap-4 md:border-l md:border-surface-container md:pl-6">
+        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+          <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xs uppercase tracking-wider text-primary font-bold">Evangelio del Día • Mt 5, 14</span>
+          <span class="text-sm text-charcoal italic line-clamp-1">"Vosotros sois la luz del mundo, no se oculta una ciudad en lo alto"</span>
+          <a href="#contacto" class="text-xs font-semibold text-primary hover:underline flex items-center gap-1 pt-0.5">
+            <span>Leer reflexión y meditación diaria</span>
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

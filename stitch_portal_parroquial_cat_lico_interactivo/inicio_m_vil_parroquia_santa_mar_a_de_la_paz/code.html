@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#ffb3b3", "secondary-container": "#c5d4fd", "on-primary-fixed-variant": "#85202b", "outline-variant": "#ddc0bf", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf9f3", "surface-container-high": "#eae8e2", "on-tertiary-fixed-variant": "#5f4100", "surface-tint": "#a53841", "primary": "#620315", "surface-variant": "#e4e2dd", "error": "#ba1a1a", "background": "#fbf9f3", "primary-fixed": "#ffdad9", "primary-container": "#821e29", "tertiary": "#3f2a00", "on-secondary-fixed": "#0a1a3a", "tertiary-fixed": "#ffdeaa", "on-primary-container": "#ff9396", "on-primary": "#ffffff", "on-background": "#1b1c18", "inverse-on-surface": "#f3f1eb", "error-container": "#ffdad6", "secondary-fixed-dim": "#b7c6ee", "on-tertiary-fixed": "#271900", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "tertiary-container": "#5c3f00", "on-error": "#ffffff", "on-secondary-container": "#4d5b7e", "secondary": "#4f5e81", "on-surface": "#1b1c18", "primary-fixed-dim": "#ffb3b3", "on-tertiary-container": "#dbaa53", "surface-container-low": "#f5f3ed", "surface-container-highest": "#e4e2dd", "surface": "#fbf9f3", "on-surface-variant": "#574241", "surface-dim": "#dcdad4", "tertiary-fixed-dim": "#f1be65", "on-secondary": "#ffffff", "outline": "#8a7171", "on-primary-fixed": "#40000a", "secondary-fixed": "#d9e2ff", "inverse-surface": "#30312d", "on-secondary-fixed-variant": "#384668", "surface-container": "#f0eee8" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin": "2rem", "space-lg": "1.5rem", "gutter-lg": "2rem", "margin-desktop": "3.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "space-xl": "2.5rem", "space-md": "1rem" }, "fontFamily": { "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "display-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-sm": ["15px", { "lineHeight": "22px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,40,36,0.05)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #821e29 - Font: playfairDisplay - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W8XBqz9s24zOkCNwbYxSbyGDRZgx0foe7vEHdY_ozKt1W052abOWDiKEeXtsVpDOS6eNBHVS3ILdnzcs2GDRw94yjUZfBoyugbTy07IgK3RfByNn-jTUcxLQcgye8kMNV4VovZ7kkGNK7Ipg1qYRqbFz2J6b31hgwy0TO21EEprJpISxdePyg8CWMBuQyZTw3lF1rkhJXMiSY76LKZ0JICnRHz6Zk-9DSh9f3h0dn74NDG_wpjn5JDwQ"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-primary truncate leading-tight">Sta. María de la Paz</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Inicio</span></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Llamar al Despacho Parroquial" class="w-11 h-11 flex items-center justify-center rounded-lg text-primary hover:bg-surface-container active:bg-surface-container-high transition-colors" href="tel:+34910000000"><span class="material-symbols-outlined text-[22px]">call</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- 1. Hero Header Mobile -->
+<section class="relative w-full overflow-hidden px-margin-mobile pt-space-lg pb-space-xl">
+<div class="absolute inset-0 z-0">
+<img alt="Interior iluminado de Santa María de la Paz con vidrieras" class="w-full h-full object-cover brightness-[0.4] scale-105 transform" src="https://lh3.googleusercontent.com/aida/AEtjO1Xz1EyDnEGaw9afRWSD_cqWnKWENz0xdCEaRAMMhUMZsThwMrcNoCuiBWMbE5NXL-WeCzZWgqtmpFVbE7pvgYkW_9X14vcArOUrwYlhmwYgsXfqUQJqg4GNVPAwB7BsDrAawgOHunXCYjQ1zq7eJSIX1CqRxypF009zWDNuM5x6H8gHDfg2LNqC3Fw37BaVczX_RpI-NwqsFhw7CxfzxrnGFBJpZw7-TtNg4aZkP2gPMfpKvU86RK0crA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-primary/50 to-primary/80 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
+</div>
+<div class="relative z-10 flex flex-col items-start max-w-lg mx-auto">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm mb-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Diócesis Metropolitana • Comunidad Pastoral</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-container-lowest font-headline-lg leading-tight mb-space-sm drop-shadow-sm">
+        Bienvenidos a la Casa de Dios y de Todos
+      </h1>
+<p class="font-body-md text-body-md text-surface-container-low/95 leading-relaxed mb-space-lg font-light">
+        Una comunidad viva de fe, contemplación, caridad fraterna y servicio silencioso en el corazón palpitante de nuestra ciudad.
+      </p>
+<div class="flex flex-col sm:flex-row w-full gap-space-sm">
+<a class="flex items-center justify-center gap-2 w-full py-3 px-space-md rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm shadow-md active:scale-[0.98] transition-transform" href="#horarios">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+<span>Ver Horarios de Misa</span>
+</a>
+<a class="flex items-center justify-center gap-2 w-full py-3 px-space-md rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-title-sm text-title-sm shadow-sm active:scale-[0.98] transition-transform" href="#oracion">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container">volunteer_activism</span>
+<span>Pedir Oración / Intención</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. Hoy en la Parroquia (Quick Status) -->
+<section class="px-margin-mobile -mt-6 z-20 w-full mb-space-xl">
+<div class="flex flex-col gap-space-sm max-w-lg mx-auto">
+<!-- Próxima Misa -->
+<div class="flex items-center gap-space-sm p-3.5 rounded-xl bg-surface-container-lowest shadow-md">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">church</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Próxima Celebración Hoy</span>
+<p class="font-title-sm text-title-sm text-on-surface truncate">Santa Misa Vespertina • 19:30 h</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Templo Mayor (Confesiones previas)</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shrink-0 animate-ping"></span>
+</div>
+<!-- Sacramento del Perdón -->
+<div class="flex items-center gap-space-sm p-3.5 rounded-xl bg-surface-container-lowest shadow-md">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">auto_fix_normal</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Sacramento del Perdón</span>
+<p class="font-title-sm text-title-sm text-on-surface truncate">Confesiones: 18:30 a 19:25 h</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pbro. Tomás &amp; Pbro. Javier</span>
+</div>
+</div>
+<!-- Evangelio del Día -->
+<div class="flex flex-col p-4 rounded-xl bg-tertiary-fixed/30 shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-1.5 mb-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Evangelio del Día</span>
+</div>
+<p class="font-headline-sm text-[16px] italic text-on-surface leading-snug">
+          «Vosotros sois la luz del mundo. No se puede ocultar una ciudad puesta en lo alto de un monte...»
+        </p>
+<span class="font-label-md text-label-md text-on-surface-variant text-right mt-1">Mateo 5, 14-16</span>
+</div>
+</div>
+</section>
+<!-- 3. Horarios Habituales de Santa Misa y Confesiones -->
+<section class="px-margin-mobile mb-space-2xl w-full" id="horarios">
+<div class="max-w-lg mx-auto">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Liturgia y Sacramentos</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-md">Horarios Parroquiales</h2>
+<!-- Tab Controller -->
+<div class="flex gap-1.5 p-1 bg-surface-container rounded-lg mb-space-md overflow-x-auto" id="liturgy-tabs">
+<button class="flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all whitespace-nowrap" id="tab-btn-domingos" onclick="switchScheduleTab('domingos')" type="button">
+          Domingos y Festivos
+        </button>
+<button class="flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all whitespace-nowrap" id="tab-btn-diario" onclick="switchScheduleTab('diario')" type="button">
+          Días Laborables
+        </button>
+<button class="flex-1 py-2 px-3 rounded-lg text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all whitespace-nowrap" id="tab-btn-confesiones" onclick="switchScheduleTab('confesiones')" type="button">
+          Confesión &amp; Adoración
+        </button>
+</div>
+<!-- Tab Content: Domingos -->
+<div class="flex flex-col gap-space-xs" id="tab-content-domingos">
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">08:00</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa Primera</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Capilla de la Sagrada Familia</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Rezada</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">10:30</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa Familiar &amp; Catequesis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Templo Parroquial (Coro Infantil)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm">Cantada</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-highest shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">12:30</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa Mayor Solemne</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Presidida por el Párroco</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Solemne</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">19:00</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa Vespertina</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comunidad Parroquial</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Rezada</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">20:30</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa de Universitarios y Jóvenes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Coro Juvenil Parroquial</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-label-sm text-label-sm">Jóvenes</span>
+</div>
+</div>
+<!-- Tab Content: Diario (Hidden initially) -->
+<div class="hidden flex-col gap-space-xs" id="tab-content-diario">
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">08:30</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa Matutina</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Laudes comunitarias a las 08:10 h</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Diaria</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<span class="font-title-lg text-title-lg text-primary font-bold">19:30</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Misa de la Tarde</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Santo Rosario meditado a las 19:00 h</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Diaria</span>
+</div>
+</div>
+<!-- Tab Content: Confesión & Adoración (Hidden initially) -->
+<div class="hidden flex-col gap-space-xs" id="tab-content-confesiones">
+<div class="p-3.5 rounded-lg bg-surface-container-low shadow-sm flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary">Confesiones Individuales</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+            • <strong>Martes a Viernes:</strong> 18:00 a 19:30 h<br/>
+            • <strong>Sábados:</strong> 17:00 a 19:00 h<br/>
+            • <strong>Domingos:</strong> Durante todas las Misas en los confesonarios laterales.
+          </p>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-highest shadow-sm flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-tertiary-container flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">wb_sunny</span> Adoración Eucarística
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+            • <strong>Jueves Eucarísticos:</strong> Exposición continua de 09:00 a 20:00 h.<br/>
+            • <strong>Hora Santa Comunitaria:</strong> Jueves a las 19:00 h con bendición sacramental.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Cronograma de Fiestas y Eventos Litúrgicos -->
+<section class="px-margin-mobile mb-space-2xl w-full">
+<div class="max-w-lg mx-auto">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">event</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Agenda Parroquial</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-sm">Próximos Eventos</h2>
+<!-- Horizontal Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-space-sm mb-space-md" id="event-filters">
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm">Todas</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap">Solemnidades</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap">Cuaresma</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap">Jóvenes</button>
+</div>
+<!-- Featured Event Card -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md mb-space-md flex flex-col">
+<div class="relative h-44 w-full">
+<img alt="Celebración del altar mayor en Santa María de la Paz" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Xz1EyDnEGaw9afRWSD_cqWnKWENz0xdCEaRAMMhUMZsThwMrcNoCuiBWMbE5NXL-WeCzZWgqtmpFVbE7pvgYkW_9X14vcArOUrwYlhmwYgsXfqUQJqg4GNVPAwB7BsDrAawgOHunXCYjQ1zq7eJSIX1CqRxypF009zWDNuM5x6H8gHDfg2LNqC3Fw37BaVczX_RpI-NwqsFhw7CxfzxrnGFBJpZw7-TtNg4aZkP2gPMfpKvU86RK0crA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+            Fiesta Patronal
+          </span>
+<div class="absolute bottom-3 left-3 right-3 text-surface-container-lowest">
+<span class="font-label-md text-label-md text-tertiary-fixed font-semibold">15 de Agosto • Solemnidad</span>
+<h3 class="font-headline-sm text-headline-sm leading-snug">Asunción de Nuestra Señora</h3>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+<span>Celebrante: Mons. Obispo Auxiliar de la Diócesis</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>12:00 h Misa Solemne • 19:30 h Procesión Claustral</span>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-surface-container text-primary font-title-sm text-title-sm hover:bg-surface-container-high active:bg-surface-container-highest transition-colors" onclick="alert('Evento añadido a tu calendario');" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Guardar en Calendario</span>
+</button>
+</div>
+</div>
+<!-- List of Upcoming Events -->
+<div class="flex flex-col gap-space-xs">
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex flex-col items-center justify-center text-primary shrink-0">
+<span class="font-label-sm text-[10px] font-bold uppercase leading-none">MAR</span>
+<span class="font-title-lg text-[18px] font-bold leading-none mt-0.5">22</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Retiro Parroquial de Cuaresma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">09:30 a 14:00 h • Casa de Espiritualidad</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex flex-col items-center justify-center text-primary shrink-0">
+<span class="font-label-sm text-[10px] font-bold uppercase leading-none">ABR</span>
+<span class="font-title-lg text-[18px] font-bold leading-none mt-0.5">04</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Solemne Vigilia Pascual</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">22:00 h • Bendición del Fuego Nuevo</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex flex-col items-center justify-center text-primary shrink-0">
+<span class="font-label-sm text-[10px] font-bold uppercase leading-none">ABR</span>
+<span class="font-title-lg text-[18px] font-bold leading-none mt-0.5">18</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Bautismos Comunitarios</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">13:30 h • Capilla Bautismal</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Los Santos Sacramentos -->
+<section class="px-margin-mobile mb-space-2xl w-full">
+<div class="max-w-lg mx-auto">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_stories</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Vida Sacramental</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Los Santos Sacramentos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Acompañando cada etapa del camino cristiano en la gracia de Dios.</p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-sm">
+<!-- Bautismo -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-8 h-8 rounded bg-primary-fixed text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Santo Bautismo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Iniciación a la fe para niños y adultos. Charlas prebautismales mensuales.</p>
+</div>
+<!-- Comunión -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-8 h-8 rounded bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">bakery_dining</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Primera Comunión</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Catequesis parroquial familiar durante dos cursos escolares.</p>
+</div>
+<!-- Confirmación -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-8 h-8 rounded bg-secondary-fixed text-secondary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Confirmación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Grupos de jóvenes y adultos. Encuentros quincenales de profundización.</p>
+</div>
+<!-- Matrimonio -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="w-8 h-8 rounded bg-primary-fixed text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface mb-1">Santo Matrimonio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Cursillos prematrimoniales y preparación del expediente canónico.</p>
+</div>
+</div>
+<!-- Unción de Enfermos (Urgencia) -->
+<div class="p-4 rounded-xl bg-primary-container text-on-primary shadow-md flex flex-col gap-2 mb-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]">healing</span>
+<h3 class="font-title-md text-title-md font-semibold text-on-primary">Unción de Enfermos</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-on-primary/10 text-on-primary font-label-sm text-label-sm font-bold uppercase">24 Horas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/90 leading-snug">
+          Asistencia sacerdotal inmediata para enfermos graves y personas en trance de muerte.
+        </p>
+<a class="flex items-center justify-center gap-2 py-2.5 px-4 rounded bg-surface-container-lowest text-primary font-title-sm text-title-sm shadow mt-1" href="tel:+34910000000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Atención Urgente 24h: (+34 910 000 000)</span>
+</a>
+</div>
+<!-- Despacho Parroquial -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[22px]">desk</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Despacho Parroquial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lunes a Jueves: 17:30 a 19:30 h</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">Consultar</span>
+</div>
+</div>
+</section>
+<!-- 6. Cáritas y Pastoral Social -->
+<section class="px-margin-mobile mb-space-2xl w-full">
+<div class="max-w-lg mx-auto bg-surface-container-low p-space-md rounded-2xl shadow-sm flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">diversity_1</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Pastoral de la Caridad</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Cáritas Parroquial</h2>
+<p class="font-headline-sm text-[16px] italic text-on-surface-variant mb-space-md">«El amor hecho servicio real y cercano»</p>
+<!-- Key Metrics -->
+<div class="grid grid-cols-3 gap-2 mb-space-md">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">185+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Familias Atendidas</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-tertiary-container font-bold">14.2 t</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Alimentos / Año</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm text-center">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">62</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Voluntarios Activos</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-2">
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm shadow-sm active:scale-[0.98] transition-transform text-center" onclick="alert('Gracias por tu generosidad. Acude al despacho de Cáritas los martes de 17h a 19h.');" type="button">
+          Ser Voluntario
+        </button>
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-title-sm text-title-sm shadow-sm active:scale-[0.98] transition-transform text-center" onclick="alert('Recogida de alimentos no perecederos en la cesta del atrio todos los domingos.');" type="button">
+          Donar Alimentos
+        </button>
+</div>
+</div>
+</section>
+<!-- 7. Sostenimiento y Ofrenda Digital -->
+<section class="px-margin-mobile mb-space-2xl w-full">
+<div class="max-w-lg mx-auto bg-surface-container-lowest p-space-md rounded-2xl shadow-md flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">volunteer_activism</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Sostenimiento del Templo</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Ofrenda y Donación</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Tu ayuda sostiene los templos, el clero y las obras socio-caritativas del barrio.
+      </p>
+<!-- Quick Amount Pills -->
+<label class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant mb-2">Selecciona un importe:</label>
+<div class="grid grid-cols-3 gap-2 mb-space-md" id="amount-pills">
+<button class="amount-btn py-2.5 rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, '10')" type="button">10 €</button>
+<button class="amount-btn py-2.5 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, '25')" type="button">25 €</button>
+<button class="amount-btn py-2.5 rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, '50')" type="button">50 €</button>
+<button class="amount-btn py-2.5 rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, '100')" type="button">100 €</button>
+<button class="amount-btn py-2.5 rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, '200')" type="button">200 €</button>
+<button class="amount-btn py-2.5 rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm font-semibold active:scale-95 transition-all" onclick="selectAmount(this, 'Otro')" type="button">Otro</button>
+</div>
+<button class="flex items-center justify-center gap-2 py-3 rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm shadow-md active:scale-[0.98] transition-transform mb-space-md" onclick="alert('Redirigiendo a pasarela segura Bizum / Redsys...');" type="button">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+<span>Ofrenda con Bizum o Tarjeta</span>
+</button>
+<!-- Bank Transfer Details -->
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Transferencia Bancaria</span>
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-[13px] font-mono text-on-surface select-all">ES45 2100 0418 4502 0005 6789</span>
+<button class="text-primary hover:opacity-80" onclick="navigator.clipboard.writeText('ES4521000418450200056789'); alert('IBAN copiado');" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Titular: Parroquia Santa María de la Paz • Desgravación fiscal disponible</span>
+</div>
+</div>
+</section>
+<!-- 8. Enviar Petición de Oración y Contacto -->
+<section class="px-margin-mobile mb-space-lg w-full" id="oracion">
+<div class="max-w-lg mx-auto bg-surface-container-lowest p-space-md rounded-2xl shadow-md flex flex-col mb-space-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">favorite_border</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Comunión de los Santos</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Intenciones de Oración</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Nuestros sacerdotes y la comunidad rezarán por tu intención en el altar durante la Misa diaria.
+      </p>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Tu intención ha sido encomendada en el altar.'); this.reset();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Nombre</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Tu nombre" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Correo Electrónico (opcional)</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Para confirmación sacerdotal" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Motivo de la Intención</label>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all">
+<option>Por un Fiel Difunto (Eterno Descanso)</option>
+<option>Por la Salud de un Enfermo</option>
+<option>Acción de Gracias</option>
+<option>Por las Familias y Matrimonios</option>
+<option>Petición Particular Confidencial</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Detalles de la Petición</label>
+<textarea class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Escribe el nombre de la persona o tu intención..." rows="3"></textarea>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm shadow-md active:scale-[0.98] transition-transform mt-1" type="submit">
+          Enviar Intención al Altar
+        </button>
+</form>
+</div>
+<!-- Contacto Directo & Ubicación -->
+<div class="max-w-lg mx-auto flex flex-col gap-space-sm">
+<a class="flex items-center justify-center gap-2 p-3.5 rounded-xl bg-[#25D366] text-white font-title-sm text-title-sm shadow-md active:scale-[0.98] transition-transform" href="https://wa.me/34600123456" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>Contactar por WhatsApp (+34 600 123 456)</span>
+</a>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Parroquia Santa María de la Paz</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plaza San Juan s/n, Casco Antiguo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">28001 Madrid, España</span>
+</div>
+</div>
+<div class="w-full h-40 rounded-lg bg-surface-container-high bg-cover bg-center shadow-inner relative overflow-hidden" data-alt="Plano cartográfico cálido y sutil de la plaza y los accesos del templo parroquial Santa María de la Paz" data-location="Plaza San Juan, Madrid, España" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXcg74E3-Aw9uVDUZJLJS_KkI78SZAxkYPgD1nxoJkKSiiAsFMiREM3wcaZo8bWrE-zECWabW0O3EVpn_5oZ1KXbIZK5MLBlWVS7Bz8V7vtm9UcShiU-kLaPQxvTlsQtZtVlZ5hbX3okA9ct2da69ekkt0Wk-p74hOdBlNIn9aKi7KSOmy_3bDonnn3w8aSzwJ4E4GrPGiad9aGw3h9x5NMCNRVYTP8ndVtawG3DwBVFPd_H2NsSg')">
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<span class="px-3 py-1 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow">Abrir en Google Maps</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic -->
+<script>
+    function switchScheduleTab(tabId) {
+      const tabs = ['domingos', 'diario', 'confesiones'];
+      tabs.forEach(t => {
+        const content = document.getElementById('tab-content-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabId) {
+          content.classList.remove('hidden');
+          content.classList.add('flex');
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          content.classList.add('hidden');
+          content.classList.remove('flex');
+          btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btn.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    function selectAmount(btn, amount) {
+      document.querySelectorAll('.amount-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(43,40,36,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors text-primary font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">church</span><span class="font-label-sm text-label-sm">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="horarios" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-label-sm text-label-sm">Horarios</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="cronograma" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-label-sm">Cronograma</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="sacramentos" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-sm text-label-sm">Sacramentos</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="ofrenda" href="#"><span class="material-symbols-outlined text-[22px]">volunteer_activism</span><span class="font-label-sm text-label-sm">Ofrenda</span></a></div></nav></body></html>
